@@ -1,0 +1,148 @@
+
+* {
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+}
+
+body {
+    margin: 0%;
+}
+
+div {
+    padding: 3px;
+    /*border: 1px solid black;*/
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+/*Header Section*/
+#header-container {
+    background-color: #25404b;
+    padding: 10px 120px 10px 120px;
+    justify-content: space-between;
+}
+
+#header-title {
+    color: white;
+    font-size: 25px;
+    font-weight: 1000;
+}
+
+#header-index {
+    align-content: center;   
+}
+
+#index-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#index-content a {
+   font-size: 14px;
+   color: white;
+   text-decoration: none;
+}
+
+
+/*Course Intro Section*/
+#intro-container {
+    padding: 50px 300px 50px 300px;
+    background-color: #b97d2d;
+    height: 300px;
+    align-content: center;
+    justify-content: center;
+}
+
+#intro-content h1 {
+    font-size: 45px;
+    font-weight: 1000;
+    color: white;
+    text-align: center;
+}
+
+#intro-content p {
+    font-size: 18px;   
+    color: white;   
+}
+
+
+
+/*Subscription Section*/
+#subscription-container {
+    padding: 15px;
+    justify-content: center;   
+    background-color: #25404b;
+}
+
+#subscription-title {
+    margin-left: 20px;
+    margin-right: 70px;
+    font-size: 16px;
+    font-weight: 1000;
+    color: white;
+}
+
+#subscription-input {
+    margin-right: 20px;
+    align-content: center;
+}
+
+#input-email {
+    margin-right: 5px;
+}
+
+#input-email input {
+    border-radius: 0px;
+    border: 0px;
+}
+
+#input-button button {
+    border: none;
+    background-color: #b97d2d;
+    color: white;
+    font-weight: bold;
+}
+
+#input-button button:hover {
+    background-color: #d59c52; 
+}
+
+#input-button button:active {
+    background-color: #ae7f43; 
+}
+
+
+/*Image Section*/
+#image-container {
+    padding: 47px;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+#image-box {
+    text-align: center;
+    width: 25%;
+}
+
+#image-box p {
+    font-size: 14px;
+}
+
+/*Footer Section*/
+#footer-container {
+    background-color: #25404b;
+    padding: 10px;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+#footer-container p {
+    font-size: 14px;
+    color: white;
+}
+

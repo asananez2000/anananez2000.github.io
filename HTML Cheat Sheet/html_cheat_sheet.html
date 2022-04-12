@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Cheat Sheet</title>
+</head>
+
+<body>
+    <h4> Nombre: Andreína Sanánez </h4>
+    <h4> Matrícula: A01024927 </h4>
+    <br>
+
+    <h2>Tags Básicos</h2>
+    <p>Antes que nada, es importante mencionar 
+        que un "tag" es una parte del markup 
+        language que indica en inicio y el final 
+        de un elemento de HTML. A continuación se 
+        utilizan y describen los tags básicos al 
+        momento de escribir HTML.</p>
+    
+    
+    <p> <b>&lt html &gt &lt /html &gt </b>: Tag que crea un documento HTML.</p>
+    <p> <b>&lt head &gt &lt /head &gt </b>: Tag que contiene los metadatos. Información que necesita ser procesada por la computadora y no se muestra en el documento (title, style sheets etc.).</p>
+    <p> <b>&lt body &gt &lt /body &gt </b>: Tag que contiene la todos los elementos visibles del documento.</p>
+    <p> <b>&lt title &gt &lt /title &gt</b>: Tag que pone el nombre del documento en la barra de título.</p>
+    <p> <b>&lt br &gt </b>: Tag que produce un salto de línea.</p>
+    <p>Ejemplo: Aquí</p>
+    <br>
+    <p>Hay un salto de línea</p>
+    <p> <b>&lt p &gt &lt /p &gt</b>: Tag que crea un párrafo (este es un elemento de párrafo).</p>
+    <br>
+
+    <h3>Dentro del Headline</h3>
+    <p>Los tags <b>&lt h# &gt &lt /h# &gt</b> son un tag de texto y sirven para crear títulos/subtítulos. Estos van de <b>&lt h1 &gt</b> - <b>&lt h6 &gt</b> donde h1 corresponde al tamaño más grande y h6 al menor. A continuación encuentran utilizados cada uno de ellos. </p>
+
+    <h1>Header 1</h1>
+    <h2>Header 2</h2>
+    <h3>Header 3</h3>
+    <h4>Header 4</h4>
+    <h5>Header 5</h5>
+    <h6>Header 6</h6>
+    <br>
+
+    <div>
+        <h3>Dentro del Div</h3>
+        <p>El tag <b>&lt div &gt &lt /div &gt</b> es un elemento que sirve como un contenedor genérico que por ende no tiene ningún efecto en el estilo de su contenido. Es útil para dar estructura en la página y al momento de dar estilo a cierto contenido </p>
+        <p><b>Toda la sección "Dentro del Div" está dentro de un div</b></p>
+    </div>
+    <br>
+
+    <h3>Tags Semánticos</h3>
+    <p>Los tags semánticos son aquellos elementos en HTML cuyo nombre describe de forma clara su función. Por ejemplo el nombre del elemento <b>&lt table &gt &lt /table &gt</b> decribe con claridad que sirve para crear una tabla.</p>
+    <br>
+
+    <header>
+        <h3>Dentro del Header</h3>
+        <p>Los headers <b>&lt header &gt &lt /header &gt</b> son un tag semántico que especifican el encabezado de alguna sección. Se utilizan como contenedores para contenido introductorio. Es como un <b>&lt div &gt</b> glorificado, el cual semanticamente (tanto para el buscador como para el desarrollador) el propósito de agrupar dicho tipo de contenido. </p>
+        <p><b>Toda la sección "Dentro del Header" está dentro de un header.</b></p>
+    </header>
+    <br>
+
+    <span>
+        <h3>Dentro del Span</h3>
+        <p>El tag <b>&lt span &gt &lt /span &gt</b> es un elemento que crea un contenedor en línea por lo que es útil para aplicar estilo a <span style="color: blueviolet;"> parte de un texto</span> o incluso parte de un documento.</p>
+    </span>
+    <br>
+
+    <div> 
+        <h3>Dentro de Article</h3>
+        <p>El tag <b>&lt article &gt &lt /article &gt</b> se utiliza comunmente para contener información que tiene sentido por sí misma y que puede distribuirse independientement del sitio en el que está. Ej: blogs o noticias.</p>
+        <p><b>Ejemplo de uso:</b></p>
+
+        <article>
+            <h4>Google Chrome</h4>
+            <p>Google Chrome es un navegador web desarrollado por Google, lanzado en 2008. Actualmente, Chrome es el navegador web más popular del mundo.</p>
+        </article>
+         
+    </div>
+    <br>
+
+    <div>
+        <h2>Listas</h2>
+        <p>En HTML existen ciertos elementos para crear listas. Especificamente hay dos tipos, las <b>listas no ordenadas</b> y las <b>listas ordenadas</b> </p>
+
+        <h3>Listas no Ordenadas (unordered lists)</h3>
+        <p>Se utiliza el tag <b>&lt ul &gt &lt /ul &gt</b> que crea una lista no ordenada. Dentro de este elemento se utiliza el tag <b>&lt li &gt &lt /li &gt</b> (list element) para agregar cada elemento de la lista. Como este tag está dentro de un elemento <b>&lt ul &gt &lt /ul &gt</b> el texto se marca con viñetas.</p>
+
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ul>
+
+        <h3>Lista Ordenadas (ordered lists)</h3>
+        <p>Se utiliza el tag <b>&lt ol &gt &lt /ol &gt</b> que crea una lista ordenada. Dentro de este elemento se utiliza el tag <b>&lt li &gt &lt /li &gt</b> (list element) para agregar cada elemento de la lista. Como este tag está dentro de un elemento <b>&lt ol &gt &lt /ol &gt</b> el texto se marca con enumeración.</p>
+
+        <ol>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ol>
+    </div>
+    <br>
+
+    <div>
+        <h2>Tablas</h2>
+        <p>En HTML también existen elementos para crear tablas. Estos de describen a continuación.</p>
+        
+        <p> <b>&lt table &gt &lt /table &gt </b>: Tag que sirve para crear una tabla.</p>
+        <p> <b>&lt thead &gt &lt /thead &gt </b>: Tag que contiene el conjunto de filas que definen los encabezados de las columnas</p>
+        <p> <b>&lt tbody &gt &lt /tbody &gt </b>: Tag que tiene el contenido de la tabla encapsulando el conjunto de filas <b>&lt tr &gt</b> que la componen.</p> 
+        <p> <b>&lt tr &gt &lt /tr &gt </b>: Tag que crea una fila en la tabla y en su interior contiene el conjunto de celdas <b>&lt td &gt</b> que la conforman. </p>
+        <p> <b>&lt td &gt &lt /td &gt </b>: Tag que crea una celda y define la información que contine. </p>
+
+        <h4>Ejemplo de implementación de una tabla</h4>
+        <table> 
+            <thead>
+                <tr>
+                    <td>h1</td>
+                    <td>h2</td>
+                    <td>h3</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>r11</td>
+                    <td>r12</td>
+                    <td>h13</td>
+                </tr>
+                
+                <tr>
+                    <td>r21</td>
+                    <td>r22</td>
+                    <td>h23</td>
+                </tr>
+
+                <tr>
+                    <td>r31</td>
+                    <td>r32</td>
+                    <td>h33</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+    <br>
+
+    <div>
+        <h3>Imágenes</h3>
+        <p>En HTML existen diferentes formas para insertar imágenes en un documento. Todas las que se utilizan en este documento utilizan el elemento <b>&lt img &gt</b> que sirve para incorporar una imagen en el mismo. </p>
+        <p><b>src</b> es un atributo del tag mencionado anteriormente, el cual contiene el "path" a la imagen que se quiere insertar. Este "path" puede ser relativo (foto de saturno) o puede ser una liga de internet (picsum e imagen de helados). </p> 
+        <p><b>alt</b> es un atributo del tag mencionado anteriormente, el cual contiene una breve descripción de la imagen que se muestra en caso de que esta no pueda ser cargada o mostrada.</p> 
+       
+        <img alt="saturn image" src="saturn.jpg" width="200">
+        <img alt="lorem picsum image" src="https://picsum.photos/200">
+        <img alt="ice cream image" src="https://uploads-ssl.webflow.com/5ed7118d4bcece1f6a97f6d3/6086bd1536072e9d7f0d6155_Ice-Cream-Cone-Cupcakes-Recipe-1-of-1-6.jpg" width="200">
+    </div>
+    <br>
+
+    <div>
+        <h3>Links</h3>
+        <p>En HTML también se pueden crear ligas que conducen a otros documentos, para ellos se utilizan los siguientes elementos.</p>
+        <p> <b>&lt a &gt </b>: (anchor tag) Tag que por medio de su atributo <b>href</b> puede crear un hipervínculo a algún otro documento (pág de internet, archivo, email etc.). Este elemento también tiene el atributo <b>target</b> el cual sirve para indicar donde mostrar aquello a lo que lleva el hipervínculo. </p>
+        
+        <a href="html_link.html" target="_blank"> Va a la pagina del link</a>
+
+    </div>
+    <br>
+
+    <div>
+        <h3>Formas</h3>
+        <p>Igualmente en HTML se pueden utilizar "formas" o contenedores que sirven para diferentes tipos de elmentos para que el usuario ingrese información (input elements). Posteriormente, se describen y ejemplifican los tags que sirven para lo anterior.</p>
+        
+        <p> <b>&lt form &gt &lt /form &gt </b>: Tag que crea una forma y contiene sus diferentes elementos que la conforman.</p>
+        <p> <b>&lt textarea &gt &lt /textarea &gt </b>: Tag que crea un cuadro de texto cuyo tamaño o logitud del texto que sorporta es flexible (bueno para comentarios, reseñas etc.). Tiene atributo <b>placeholder</b> el cual sirve para dar una breve descripción al usuario.</p>
+        <p> <b>&lt button &gt &lt /button &gt </b>: Tag que crea un botón con su respectivo texto y la capacidad de interactuar con el mouse de usuario. </p>
+        
+        <form>
+            <textarea placeholder="Escribe aquí"></textarea>
+            <button>Click me</button>
+            
+
+            <p> <b>&lt input &gt</b>: Tag que crea crea un cuadro de texto y es especialmente útil ya que permite una variedad de "input types" mediante su atributo <b>type</b>. </p>
+            <p>Name</p>
+            <input>
+            
+            <p> <b>atributo type="email"</b>: Atributo que hace que el cuadro de texto tenga parámetros de validación útiles para email.</p>
+            <p>Email</p>
+            <input type="email">
+
+            <p> <b>atributo type="password"</b>: Atributo que le da la funcionalidad necesaria para passwords al cuadro de texto (obscurece el texto y tiene botón de mostrar). </p>
+            <p>Password</p>
+            <input type="password">
+
+            <p> <b>atributo placeholder="Escribe aquí"</b>: Imput también tiene este atributo y sirve para dar una breve descripción acerca de lo que se debe de escribir.</p>
+            <p>Description</p>
+            <input placeholder="Escribe aquí">
+
+        </form>
+    </div>
+    <br>
+
+    <div>
+        <h3>Strong</h3>
+        <p><b>&lt strong &gt &lt /strong &gt </b> es un tag que se utiliza para definir a un texto con importancia. </p>
+        <p>Por ejemplo en esta <strong>palabra</strong> se resalta utilizando dicho tag.</p>
+    </div>
+    <br>
+
+    <div>
+        <h3>Italics</h3>
+        <p><b>&lt i &gt &lt /i &gt </b> es un tag que se utiliza para aplicarle italicas a un texto. </p>
+        <p>Por ejemplo en esta <i>palabra</i> se utiliza dicho tag.</p>
+    </div>
+    <br>
+
+    <div>
+        <h3>Underline</h3>
+        <p><b>&lt u &gt &lt /u &gt </b> es un tag que se utiliza para aplicar subrayado a un texto. </p>
+        <p>Por ejemplo en esta <u>palabra</u> se utiliza dicho tag.</p>
+    </div>
+    <br>
+
+    <div>
+        <h3>Bold</h3>
+        <p><b>&lt b &gt &lt /b &gt </b> es un tag que se utiliza para aplicar negritas a un texto. </p>
+        <p>Por ejemplo en esta <b>palabra</b> se resalta utilizando dicho tag.</p>
+    </div>
+    <br>
+
+    <div>
+        <h3>Strike</h3>
+        <p><b>&lt strike &gt &lt /strike &gt </b> es un tag que se utiliza para tachar o dibujar una línea sobre el texto. </p>
+        <p>Por ejemplo en esta <strike>palabra</strike> se utiliza dicho tag.</p>
+    </div>
+    <br>
+
+    <div>
+        <h3>Small</h3>
+        <p><b>&lt small &gt &lt /small &gt </b> es un tag que se utiliza para definir texto más pequeño como copyright o comentarios. </p>
+        <p>Por ejemplo en esta <small>palabra</small> se utiliza dicho tag.</p>
+    </div>
+    <br>
+
+    <div>
+        <h3>Emphasis</h3>
+        <p><b>&lt em &gt &lt /em &gt </b> es un tag que se utiliza para darle énfasis a un texto (similar a italicas). </p>
+        <p>Por ejemplo en esta <em>palabra</em> se utiliza dicho tag.</p>
+    </div>
+    <br>
+
+    <div>
+        <h3>Section</h3>
+        <p><b>&lt section &gt &lt /section &gt </b> es un tag que se utiliza para crear un sección en un documento HTML. Aunque este tag es muy similar al "div" este se utiliza para contenido que se relaciona con un mismo tema. </p>
+
+        <section>
+            <h4>Ejemplo:</h4>
+            <p>Por ejemplo esta es una sección que trata del ejemplo del tag "section". </p>
+        </section>
+       
+    </div>
+    <br>
+
+    <div>
+        <h3>Aside</h3>
+        <p><b>&lt aside &gt &lt /aside &gt </b> es un tag que que crea una sección que continene información secundaria acerca del contenido principal.</p>
+
+        <section>
+            <aside>
+                <h4>Ejemplo:</h4>
+                <p>Este ejemplo se encuentra dentro de dicho tag. Notar como el tag no define la posición y sólo describe la información que engloba. </p>
+            </aside>
+        </section>
+       
+    </div>
+    <br>
+
+    <div>
+        <h3>Navegación</h3>
+        <p><b>&lt nav &gt &lt /nav &gt </b> es un tag que en su interior contiene enlaces de navegación, ya sea dentro del documento o a otro documento.</p>
+        <h4>Ejemplo: (en conjunto con el achor tag)</h4>
+        <nav>
+            <a href="https://www.google.com/">Visita Google dando click</a>
+        </nav>
+    </div>
+    <br>
+
+    <div>
+        <h3>Footer</h3>
+        <p><b>&lt footer &gt &lt /footer &gt </b> es un tag que define el pie de página de un documento. </p>
+        <h4>Ejemplo de Footer:</h4>
+        <footer>
+            <p> &copy 2022 - Andreína Sanánez<br>
+            <a href="mailto:andreina@ejemplo.com">andreina@ejemplo.com</a></p>
+          </footer>
+          
+    </div>
+
+</body>
+</html>
